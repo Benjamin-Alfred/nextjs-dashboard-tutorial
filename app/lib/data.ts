@@ -215,3 +215,9 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error('Failed to fetch customer table.');
   }
 }
+
+export async function delayMe() {
+
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  return 0;
+}
