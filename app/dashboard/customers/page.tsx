@@ -1,5 +1,5 @@
-export default function Page() {
-    const num = delayMe();
+export default async function Page() {
+    const num = await delayMe();
     console.log(num);
     return <p>Customers Page {num}</p>;
   }
